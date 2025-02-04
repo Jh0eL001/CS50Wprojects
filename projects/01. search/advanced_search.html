@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Advanced Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    .btn {
+      background-color: #1a73e8;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn:hover {
+      background-color: #1558b0;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html">Home</a>
+  <div class="container">
+    <h1>Google Advanced Search</h1>
+    <form action="https://www.google.com/search" method="get">
+      <div class="form-group">
+        <label for="all-words">Find pages with… “all these words:”</label>
+        <input type="text" id="all-words" name="as_q">
+      </div>
+      <div class="form-group">
+        <label for="exact-phrase">Find pages with… “this exact word or phrase:”</label>
+        <input type="text" id="exact-phrase" name="as_epq">
+      </div>
+      <div class="form-group">
+        <label for="any-words">Find pages with… “any of these words:”</label>
+        <input type="text" id="any-words" name="as_oq">
+      </div>
+      <div class="form-group">
+        <label for="none-words">Find pages with… “none of these words:”</label>
+        <input type="text" id="none-words" name="as_eq">
+      </div>
+      <button type="submit" class="btn">Advanced Search</button>
+    </form>
+  </div>
+</body>
+</html></html>
